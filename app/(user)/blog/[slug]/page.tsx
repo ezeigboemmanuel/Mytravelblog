@@ -31,6 +31,17 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.description,
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      url: `https://ztravel.vercel.app/blog/${post.slug.current}`,
+      siteName: "ZTravel",
+      images: [
+        {
+          url: urlForImage(post.mainImage),
+        },
+      ],
+    },
   };
 }
 

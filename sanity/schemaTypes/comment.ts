@@ -23,10 +23,10 @@ export default defineType({
         name: "comment",
         type: "text"
     }),
-    defineField({
+    {
         name: "post",
         type: "reference",
         to: [{type: "post"}]
-    }),
+    },
   ],
 })

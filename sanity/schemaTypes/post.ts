@@ -24,13 +24,13 @@ export default defineType({
       title: 'Description',
       type: 'string',
     }),
-    defineField({
+    {
       name: 'author',
       title: 'Author',
       type: 'reference',
       to: {type: 'author'},
-    }),
-    defineField({
+    },
+    {
       name: 'mainImage',
       title: 'Main image',
       type: 'image',
@@ -44,13 +44,13 @@ export default defineType({
           title: 'Alternative Text',
         }
       ]
-    }),
-    defineField({
+    },
+    {
       name: 'categories',
       title: 'Categories',
       type: 'array',
       of: [{type: 'reference', to: {type: 'category'}}],
-    }),
+    },
     defineField({
       name: 'publishedAt',
       title: 'Published at',

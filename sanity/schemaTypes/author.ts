@@ -19,7 +19,7 @@ export default defineType({
         maxLength: 96,
       },
     }),
-    defineField({
+    {
       name: 'image',
       title: 'Image',
       type: 'image',
@@ -33,8 +33,8 @@ export default defineType({
           title: 'Alternative Text',
         }
       ]
-    }),
-    defineField({
+    },
+    {
       name: 'bio',
       title: 'Bio',
       type: 'array',
@@ -46,7 +46,7 @@ export default defineType({
           lists: [],
         },
       ],
-    }),
+    },
   ],
   preview: {
     select: {
